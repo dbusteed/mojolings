@@ -29,5 +29,5 @@
 #   of the comment.
 #
 
-fn main() raises:
+fn main():
     print("Hello Mojolings!")

@@ -16,9 +16,9 @@
 #   https://docs.modular.com/mojo/manual/basics.html#variables
 #
 
-def main():
+fn main():
     let age = 20
-    let can_vote = False
+    var can_vote = False
 
     if age >= 18:
         can_vote = True

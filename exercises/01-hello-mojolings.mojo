@@ -29,5 +29,5 @@
 #   of the comment.
 #
 
-fn start() raises:
+fn start():
     print("Hello Mojolings!")

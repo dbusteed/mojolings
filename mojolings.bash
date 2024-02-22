@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# TODO
+# - maybe don't show previous exercises while in interactive mode?
+# - some message when all exercises are done?
+# - % completed in full mode?
+
 clear
 
 exercise_dir="exercises"
@@ -33,7 +38,8 @@ else
     for exercise in $exercise_dir/*.mojo; do
         head -n 1 $exercise | grep "I'M NOT DONE" &> /dev/null
         if [ $? -ne 0 ]; then 
-            echo "✅ $(basename $exercise)"
+            echo "still debating if we show the previously completed exercises" > /dev/null
+            # echo "✅ $(basename $exercise)"
         else
             output=$(mojo $exercise 2>&1)
             if [ $? -eq 0 ]; then
